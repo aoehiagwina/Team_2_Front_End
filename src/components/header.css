@@ -1,0 +1,29 @@
+
+*{
+    @-webkit-keyframes color-change-5x{0%{background:#19dcea}25%{background:#b22cff}50%{background:#ea2222}75%{background:#f5be10}100%{background:#3bd80d}}@keyframes color-change-5x{0%{background:#19dcea}25%{background:#b22cff}50%{background:#ea2222}75%{background:#f5be10}100%{background:#3bd80d}}
+}
+
+.Header_Title {
+    /* background-color: #282c34; */
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    /* justify-content: center; */
+    font-size: calc(10px + 2vmin);
+    /* color: white; */
+}
+
+.Header_Navs {
+    /* background-color: #282c34; */
+    /* min-height: 100vh; */
+    padding: 0;
+    margin-left: 50pc;
+    margin-right: 5pc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    /* color: white; */
+}
+
+/* Set the background colours on a dynmic part */
