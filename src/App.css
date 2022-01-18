@@ -1,6 +1,12 @@
+
+
+
 .App {
   text-align: center;
+  
+
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.display {
+  -webkit-animation: color-change-4x 6s linear infinite alternate both;
+  animation: color-change-4x 6s linear infinite alternate both;
 }
