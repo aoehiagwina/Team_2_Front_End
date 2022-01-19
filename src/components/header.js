@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="header">
             <div className="Header_Title">
                 <h1>The Ultimate Challenge</h1>
-                <h3>Where the best of gammers competes for tthe world championship</h3>
+                <h3>Where the best of gammers competes for the world championship</h3>
             </div>
 
             <div className="Header_Navs">

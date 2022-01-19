@@ -2,7 +2,7 @@ import React from "react";
 
 import './sign_up.css'
 
-export const Sign_Up = ({signingHandler, set_username, set_email, set_password}) => {
+export const SignUp = ({signingHandler, set_username, set_email, set_password}) => {
     return(
         <div>
             <h1>Register now below</h1>
