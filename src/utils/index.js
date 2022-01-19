@@ -47,3 +47,16 @@ export const signUpFetch = async (username, email, password) => {
       console.log(error);
     }
   };
+
+  export const deleteUserFetch = async (username) => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_REST_API}user/${username}`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
