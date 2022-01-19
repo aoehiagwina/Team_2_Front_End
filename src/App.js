@@ -5,6 +5,8 @@ import { Login } from './components/login';
 import { Home } from './components/home';
 import { About } from './components/about';
 import { Logout} from './components/logout';
+import { Profile } from './components/profile';
+import { CreateTournament } from './components/createTournament';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import {signUpFetch} from "./utils/index";
@@ -58,7 +60,8 @@ const App = () => {
             <Route path="/login"  element={<Login/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/logout" element={<Logout/>} />
-
+            <Route path="/profile" element={<Profile/>} />
+            <Route path="/createTournament" element={<CreateTournament/>} />
           </Routes>
 
         </main>
