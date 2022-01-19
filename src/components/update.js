@@ -3,7 +3,7 @@
 export const Update = ({user_name, user_email, update_Handler, set_Username, set_Email}) => {
     return (
         <div>
-            <form onSubmit={update_Handler}>
+            {/* <form onSubmit={update_Handler}>
             <input
                 onChange={(e) => set_Username(e.target.value)}
                 placeholder={user_name}
@@ -13,7 +13,7 @@ export const Update = ({user_name, user_email, update_Handler, set_Username, set
                 placeholder={user_email}
             />
             <button type="submit">Update</button>
-            </form>
+            </form> */}
         </div>
     )
 };
