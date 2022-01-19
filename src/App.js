@@ -34,20 +34,14 @@ const App = () => {
     setEmail(return_details.user.email);
   }
 
-  const updateHandler = async (e) => {
-    e.preventDefault();
-    const update_details = await updateUserFetch(username, email);
-    setUsername(update_details.username);
-    setEmail(update_details.email);
-  }
-
 
 
 
   return (
     <Router className="App">
       <div>
-        <Header />
+        <h1>The Ultimate Challenge</h1>
+        <h3>Where the best of gammers competes for the world championship</h3>
         <main>
           <Routes>
             <Route exact path='/sign_up' element= {<SignUp />}></Route>
