@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Header} from './components/header'
 import {SignUp} from './components/sign_up';
 import { Login } from './components/login';
 import { Home } from './components/home';
 import { About } from './components/about';
 import { Logout} from './components/logout';
+import { Profile } from './components/profile';
+import { CreateTournament } from './components/createTournament';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import {signUpFetch} from "./utils/index";
 import {readUserFetch} from "./utils/index";
 import {updateUserFetch} from "./utils/index";
+import { tokenCheck } from "./utils";
 
 const App = () => {
 
-  // const [user, setUser] = useState();
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    tokenCheck(setUser);
+  }, []);
+
   // const [username, setUsername] = useState();
   // const [email, setEmail] = useState();
   // const [password, setPassword] = useState();
@@ -50,10 +58,11 @@ const App = () => {
           <Routes>
             {/* <Route exact path='/sign_up' element= {<SignUp />}></Route> */}
             <Route  exact path="/home"  element={<Home/>} />
-            <Route path="/login"  element={<Login/>} />
+            <Route path="/login"  element={<Login user={user} setUser={setUser}/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/logout" element={<Logout/>} />
-
+            <Route path="/profile" element={<Profile user={user}/>} />
+            <Route path="/createTournament" element={<CreateTournament user={user}/>} />
           </Routes>
 
         </main>

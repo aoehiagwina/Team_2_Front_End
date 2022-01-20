@@ -10,7 +10,7 @@ export const signUpFetch = async (username, email, password, setUser) => {
       }),
     });
     const data = await response.json();
-    setUser(data.user.username);
+    setUser(data.user);
     localStorage.setItem("myToken", data.token);
   } catch (error) {
     console.log(error);
@@ -29,7 +29,7 @@ export const signUpFetch = async (username, email, password, setUser) => {
         }),
       });
       const data = await response.json();
-      setUser(data.user.username);
+      setUser(data.user);
       localStorage.setItem("myToken", data.token);
     } catch (error) {
       console.log(error);
@@ -42,7 +42,7 @@ export const signUpFetch = async (username, email, password, setUser) => {
         headers: { Authorization: `Bearer ${localStorage.getItem("myToken")}` },
       });
       const data = await response.json();
-      setUser(data.user.username);
+      setUser(data.user);
     } catch (error) {
       console.log(error);
     }
