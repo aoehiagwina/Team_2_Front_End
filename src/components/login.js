@@ -5,17 +5,17 @@ import './login.css';
 
 import './sign_up';
 
-export const Login =() =>{
-    const [user, setUser] = useState();
+export const Login =({user, setUser}) =>{
+    //const [user, setUser] = useState();
     const [username, setUsername] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [logBool, setLogBool] = useState(true);
 
 
-    useEffect(() => {
-      tokenCheck(setUser);
-    }, []);
+    // useEffect(() => {
+    //   tokenCheck(setUser);
+    // }, []);
     
     const submitHandler = (e) => {
         e.preventDefault();
@@ -54,7 +54,7 @@ export const Login =() =>{
               </span></button>
              
           </div>) : (<div >
-                    <h2  >Welcome {user}</h2>
+                    <h2  >Welcome {user.username}</h2>
                 
                     </div>
                   )}
