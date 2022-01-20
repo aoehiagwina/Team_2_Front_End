@@ -5,7 +5,7 @@ import './sign_up.css'
 export const SignUp = ({signingHandler, set_username, set_email, set_password}) => {
     return(
         <div>
-            <h1>Register now below</h1>
+            {/* <h1>Register now below</h1>
             <br/>
             <form className="Reg_Form" onSubmit={signingHandler}>
                 <input
@@ -21,7 +21,7 @@ export const SignUp = ({signingHandler, set_username, set_email, set_password}) 
                 placeholder="Password"
                 />
                 <button type="submit">Submit</button>
-            </form>
+            </form> */}
 
         </div>
     );
