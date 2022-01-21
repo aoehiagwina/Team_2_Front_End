@@ -16,12 +16,12 @@ export const CreateTournament = ({user}) => {
     return (
         <div>
             <form onSubmit={createTournamentHandler}>
-                <label>Create your tournamnt!</label>
-                <input onChange={(e) => setTournamentName(e.target.value)} placeholder="Name of your tournament"/>
-                <input onChange={(e) => setGame(e.target.value)} placeholder="Game"/>
-                <input type="datetime-local" onChange={(e) => setDate(e.target.value)}/>
-                <input onChange={(e) => setDescription(e.target.value)} placeholder="Add a description of your tournament"/>
-                <input onChange={(e) => setTags(e.target.value.split(","))} placeholder="Separate your tags with a ,"/>
+                <label>Create your tournamnt!</label><br/>
+                <input onChange={(e) => setTournamentName(e.target.value)} placeholder="Name of your tournament"/><br/>
+                <input onChange={(e) => setGame(e.target.value)} placeholder="Game"/><br/>
+                <input type="datetime-local" onChange={(e) => setDate(e.target.value)}/><br/>
+                <input onChange={(e) => setDescription(e.target.value)} placeholder="Add a description of your tournament"/><br/>
+                <input onChange={(e) => setTags(e.target.value.split(","))} placeholder="Separate your tags with a ,"/><br/>
                 <button type="submit">Submit</button>
             </form>
         </div>
