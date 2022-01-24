@@ -54,16 +54,16 @@ export const SignUp = ({user, setUser}) => {
                 <div className="form-container sign-up-container">
                     <form action="#" onSubmit={submitHandler}>
                         <h1>Create Account</h1>
-                        <div class="social-container">
-                            <Link to="https://www.facebook.com/" class="social">
+                        <div className="social-container">
+                            <Link to="https://www.facebook.com/" className="social">
                                 <FontAwesomeIcon icon={faFacebook} size="2x"  className="fab fa-facebook-f"/>
                                 {/* <i className="fab fa-facebook-f"/> */}
                             </Link>
-                            <Link to="https://www.googleplusg.com/" class="social">
+                            <Link to="https://www.googleplusg.com/" className="social">
                                 <FontAwesomeIcon icon={faGooglePlusG} size="2x" className="fab fa-google-plus-g"/>
                                 {/* <i className="fab fa-google-plus-g"></i> */}
                             </Link>   
-                            <Link to="https://www.linkedin.com/" class="social">
+                            <Link to="https://www.linkedin.com/" className="social">
                                 <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="fab fa-linkedin-in"/>
                                 {/* <i className="fab fa-linkedin-in"></i> */}
                             </Link>
@@ -82,19 +82,19 @@ export const SignUp = ({user, setUser}) => {
                         <button type="submit" onClick={() =>  setLogBool(!logBool)}>Sign Up</button>
                     </form>
                 </div>
-                <div class="form-container sign-in-container">
+                <div className="form-container sign-in-container">
                     <form action="#">
                         <h1>Sign in</h1>
                         <div className="social-container">
-                            <Link to="https://www.facebook.com/" class="social">
+                            <Link to="https://www.facebook.com/" className="social">
                                 <FontAwesomeIcon icon={faFacebook} size="2x"  className="fab fa-facebook-f"/>
                                 {/* <i className="fab fa-facebook-f"/> */}
                             </Link>
-                            <Link to="https://www.googleplusg.com/" class="social">
+                            <Link to="https://www.googleplusg.com/" className="social">
                                 <FontAwesomeIcon icon={faGooglePlusG} size="2x" className="fab fa-google-plus-g"/>
                                 {/* <i className="fab fa-google-plus-g"></i> */}
                             </Link> 
-                            <Link to="https://www.linkedin.com/" class="social">
+                            <Link to="https://www.linkedin.com/" className="social">
                                 <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="fab fa-linkedin-in"/>
                                 {/* <i className="fab fa-linkedin-in"></i> */}
                             </Link>
