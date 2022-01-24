@@ -54,11 +54,10 @@ const App = () => {
   return (
     <Router className="App">
       <div className='title'>
-        <h1 className='major'>The Ultimate Challenge</h1>
-        <h3>Where the best of gammers competes for the world championship</h3>
+      <Header />
         <main>
           <Routes>
-            <Route exact path='/sign_up' element= {<SignUp />}></Route>
+            <Route exact path='/sign_up' element= {<SignUp user={user} setUser={setUser}/>}></Route>
             <Route  exact path="/home"  element={<Home/>} />
             <Route path="/login"  element={<Login user={user} setUser={setUser}/>} />
             <Route path="/about" element={<About/>} />
@@ -70,9 +69,10 @@ const App = () => {
 
         </main>
         
-      <div className='login'>
+        
+      {/* <div className='login'>
         <SignUp /> 
-      </div>
+      </div> */}
 
       </div>
 
