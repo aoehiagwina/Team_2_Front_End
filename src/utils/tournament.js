@@ -19,13 +19,13 @@ export const addTournamentFetch = async (tournamentName, game, date, creator, de
     }
 };
 
-export const searchTournamentFetch = async (searchKey, searchValue) => {
+export const searchTournamentFetch = async (searchKey, searchValue, setter) => {
     try {
         const response = await fetch(`${process.env.REACT_APP_REST_API}tournament/${searchKey}/${searchValue}`, {
             method: "GET",
             headers: { "Content-Type": "application/json" }});
         const data = await response.json();
-        return data;
+        setter(data.tournament);
     } catch (error) {
         console.log(error);
     }
@@ -37,8 +37,8 @@ export const addPlayerFetch = async (tournamentName, user) => {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                tournamentName: tournamentName,
-                user: user
+                tournamentName,
+                user
             })
         });
         const data = await response.json();
@@ -54,8 +54,8 @@ export const removePlayerFetch = async (tournamentName, user) => {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                tournamentName: tournamentName,
-                user: user
+                tournamentName,
+                user
             })
         });
         const data = await response.json();
@@ -67,12 +67,12 @@ export const removePlayerFetch = async (tournamentName, user) => {
 
 export const deleteTournamentFetch = async (tournamentName, creator) => {
     try {
-        const response = await fetch(`${process.env.REACT_APP_REST_API}tournament/remove`, {
+        const response = await fetch(`${process.env.REACT_APP_REST_API}tournament`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                tournamentName: tournamentName,
-                creator: creator
+                tournamentName,
+                creator
             })
         });
         const data = await response.json();
