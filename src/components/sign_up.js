@@ -19,6 +19,7 @@ export const SignUp = ({user, setUser}) => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [logBool, setLogBool] = useState(true);
+    const [signing_in, setSigning] = useState(true);
 
 
     const container = document.getElementById('container');
@@ -27,11 +28,10 @@ export const SignUp = ({user, setUser}) => {
         container.classList.add("right-panel-active");
     };
 
-    const to_signin = (e) => {
+    const to_signin = () => {
         container.classList.remove("right-panel-active");
     };
 
- 
 
     // useEffect(() => {
     //   tokenCheck(setUser);
@@ -39,10 +39,12 @@ export const SignUp = ({user, setUser}) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if (email) {
+        if (!signing_in) {
             signUpFetch(username, email, password, setUser);
+            setLogBool(!logBool)
         } else {
             logInFetch(username, password, setUser);
+            setLogBool(!logBool)
         } 
     };
 
@@ -52,7 +54,7 @@ export const SignUp = ({user, setUser}) => {
             {!user ? (
             <div className="container" id="container">
                 <div className="form-container sign-up-container">
-                    <form action="#" onSubmit={submitHandler}>
+                    <form onSubmit={submitHandler}>
                         <h1>Create Account</h1>
                         <div class="social-container">
                             <Link to="https://www.facebook.com/" class="social">
@@ -72,18 +74,17 @@ export const SignUp = ({user, setUser}) => {
                         <input type="text" onChange={(e) => setUsername(e.target.value)}
                                 placeholder="Username" />
 
-                        {logBool && (
-                            <input
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="Email" type="email"
-                                />)}
+                        <input
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Email" type="email"
+                            />
                         <input type="password" placeholder="Password" 
                             onChange={(e) => setPassword(e.target.value)}/>
-                        <button type="submit" onClick={() =>  setLogBool(!logBool)}>Sign Up</button>
+                        <button type="submit" onClick={()=> setSigning(!signing_in)}>Sign Up</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
-                    <form action="#">
+                    <form onSubmit={submitHandler}>
                         <h1>Sign in</h1>
                         <div className="social-container">
                             <Link to="https://www.facebook.com/" class="social">
@@ -106,10 +107,9 @@ export const SignUp = ({user, setUser}) => {
                         <input
                         onChange={(e) => setPassword(e.target.value)}
                         placeholder="Password" type="password" />
-                        <Link to="#">Forgot your password?</Link>
+                        <Link to="">Forgot your password?</Link>
                         <Link to="">
-                            <button onClick={() =>  setLogBool(!logBool)
-                            }>Sign In</button>
+                            <button type="submit" onClick={()=> setSigning(signing_in)}>Sign In</button>
                         </Link>
                     </form>
                 </div>

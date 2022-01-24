@@ -7,7 +7,6 @@ import { Home } from './components/home';
 import { About } from './components/about';
 import { Logout} from './components/logout';
 import { Profile } from './components/profile';
-import { Search } from './components/search';
 import { CreateTournament } from './components/createTournament';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -65,21 +64,20 @@ const App = () => {
             <Route path="/logout" element={<Logout/>} />
             <Route path="/profile" element={<Profile user={user}/>} />
             <Route path="/createTournament" element={<CreateTournament user={user}/>} />
-            <Route path="/search" element={<Search user={user}/>} />
           </Routes>
 
         </main>
         
-      <div className='login'>
-        <SignUp /> 
-      </div>
-
-      </div>
-
       {/* <div className='login'>
         <SignUp /> 
-
       </div> */}
+
+      </div>
+
+      <div className='login'>
+        <Login /> 
+
+      </div>
 
 
     </Router>
