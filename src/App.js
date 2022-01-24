@@ -4,7 +4,7 @@ import {SignUp} from './components/sign_up';
 // import {SignIn} from './components/signin';
 import { Login } from './components/login';
 import { Home } from './components/home';
-import { About } from './components/about';
+// import { About } from './components/about';
 import { Logout} from './components/logout';
 import { Profile } from './components/profile';
 import { Search } from './components/search';
@@ -58,9 +58,9 @@ const App = () => {
         <main>
           <Routes>
             <Route exact path='/sign_up' element= {<SignUp user={user} setUser={setUser}/>}></Route>
-            <Route  exact path="/home"  element={<Home/>} />
+            <Route  exact path="/"  element={<Home/>} />
             <Route path="/login"  element={<Login user={user} setUser={setUser}/>} />
-            <Route path="/about" element={<About/>} />
+            {/* <Route path="/about" element={<About/>} /> */}
             <Route path="/logout" element={<Logout user={user} setUser={setUser}/>} />
             <Route path="/profile" element={<Profile user={user}/>} />
             <Route path="/createTournament" element={<CreateTournament user={user}/>} />

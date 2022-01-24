@@ -13,13 +13,14 @@ export const Header = () => {
             </div>
 
             <div className="Header_Navs">
-                <NavLink to='/home'>Home</NavLink>
-                <div>
+                {/* <NavLink to='/home'>Home</NavLink> */}
+                {/* <div>
                     
                     {/* <NavLink to='/sign_up'>Sign Up</NavLink> */}
-                    <NavLink to='/login'>Login</NavLink>
-                </div>
-                <NavLink to='/about'>About</NavLink>
+                    {/* <NavLink to='/login'>Login</NavLink>
+                </div> */}
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/login'>Login</NavLink>
                 <NavLink to='/logout'>Logout</NavLink>
                 <NavLink to='/profile'>Profile</NavLink>
             </div>
