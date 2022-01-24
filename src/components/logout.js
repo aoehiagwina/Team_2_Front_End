@@ -18,7 +18,7 @@ export const Logout = ({ user, setUser }) => {
           <span >{user.username}Do you want to logout?</span>
           <div >
     
-          <button  onClick={logOut}><Link to="/home" className="link">Log out</Link></button></div>
+          <button  onClick={logOut}><Link to="/" className="link">Log out</Link></button></div>
         </div>
         )}
         </div>
