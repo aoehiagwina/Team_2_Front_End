@@ -7,6 +7,7 @@ export const Header = () => {
 
     return(
         <div className="header">
+          
             <div className="Header_Title">
                 <h1>The Ultimate Challenge</h1>
                 <h3>Where the best of gamers compete for the world championship</h3>
@@ -24,6 +25,7 @@ export const Header = () => {
                 <NavLink to='/logout'>Logout</NavLink>
                 <NavLink to='/profile'>Profile</NavLink>
             </div>
+
 
         </div>
     )
