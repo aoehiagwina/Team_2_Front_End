@@ -10,11 +10,17 @@ export const Logout = ({ user, setUser }) => {
         setUser();
       };
       return (
-        <div >
-          <span >{user}Do you want to logout?</span>
+        <div>
+        {!user ? (
+          <p>Please log in</p>
+        ) : (
+          <div >
+          <span >{user.username}Do you want to logout?</span>
           <div >
     
           <button  onClick={logOut}><Link to="/home" className="link">Log out</Link></button></div>
+        </div>
+        )}
         </div>
       );
     };
