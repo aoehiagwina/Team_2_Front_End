@@ -16,7 +16,7 @@ export const CreateTournament = ({user}) => {
     return (
         <div>
             <form onSubmit={createTournamentHandler}>
-                <label>Create your tournamnt!</label><br/>
+                <label>Create your tournament!</label><br/>
                 <input onChange={(e) => setTournamentName(e.target.value)} placeholder="Name of your tournament"/><br/>
                 <input onChange={(e) => setGame(e.target.value)} placeholder="Game"/><br/>
                 <input type="datetime-local" onChange={(e) => setDate(e.target.value)}/><br/>
