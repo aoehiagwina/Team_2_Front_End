@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect} from 'react';
+import { useState, useEffect, useCallback} from 'react';
 import { deleteTournamentFetch, removePlayerFetch, searchTournamentFetch} from "../utils/tournament";
 import { List } from './list';
 
@@ -7,33 +7,31 @@ export const Profile = ({user}) => {
     const [created, setCreated] = useState();
     const [joined, setJoined] = useState();
 
-    useEffect(() => {
+    
+
+    const createdHandler = useCallback(() => {
         if (user) {
-            createdHandler();
-            joinedHandler();
+            searchTournamentFetch("creator", user._id, setCreated);
         };
-    }, []);
+    },[user]);
 
-    const createdHandler = async () => {
-        await searchTournamentFetch("creator", user._id, setCreated);
-    };
+    const joinedHandler = useCallback(() => {
+        if (user) {
+            searchTournamentFetch("players", user._id, setJoined);
+        };
+    },[user]);
 
-    const joinedHandler = async () => {
-        await searchTournamentFetch("players", user._id, setJoined);
-    };
+    useEffect( () => {
+        createdHandler();
+        joinedHandler();
+    },[createdHandler, joinedHandler]);
 
     const deleteHandler = async (tournamentName) => {
-        // let storedList = [...created];
-        // storedList.splice(index, 1);
-        // setCreated(storedList);
         await deleteTournamentFetch(tournamentName, user._id);
         createdHandler();
     };
 
     const leaveHandler = async (tournamentName) => {
-        // let storedList = [...created];
-        // storedList.splice(index, 1);
-        // setJoined(storedList);
         await removePlayerFetch(tournamentName, user._id);
         joinedHandler();
     };
