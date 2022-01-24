@@ -1,9 +1,9 @@
 import "../App.css";
 import React, { useState, useEffect } from "react";
 import { signUpFetch, tokenCheck , logInFetch} from "../utils";
-import './login.css';
+import '../css_component/login.css';
 
-import './sign_up';
+import '../css_component/sign_up.css';
 
 export const Login =({user, setUser}) =>{
     //const [user, setUser] = useState();

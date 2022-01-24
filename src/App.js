@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Header} from './components/header'
 import {SignUp} from './components/sign_up';
+// import {SignIn} from './components/signin';
 import { Login } from './components/login';
 import { Home } from './components/home';
 import { About } from './components/about';
@@ -51,12 +52,12 @@ const App = () => {
 
   return (
     <Router className="App">
-      <div>
-        <h1>The Ultimate Challenge</h1>
+      <div className='title'>
+        <h1 className='major'>The Ultimate Challenge</h1>
         <h3>Where the best of gammers competes for the world championship</h3>
         <main>
           <Routes>
-            {/* <Route exact path='/sign_up' element= {<SignUp />}></Route> */}
+            <Route exact path='/sign_up' element= {<SignUp />}></Route>
             <Route  exact path="/home"  element={<Home/>} />
             <Route path="/login"  element={<Login user={user} setUser={setUser}/>} />
             <Route path="/about" element={<About/>} />
@@ -66,17 +67,17 @@ const App = () => {
           </Routes>
 
         </main>
-      
+        
+      <div className='login'>
+        <SignUp /> 
       </div>
 
-      <div>
-        {/* <Login returning_user={listUser}
-        user_email={email} 
-        login_Handler={loginHandler}
-        set_Username={setUsername}
-        set_Password={setPassword} /> */}
-        {/* <Login/> */}
       </div>
+
+      {/* <div className='login'>
+        <SignUp /> 
+
+      </div> */}
 
 
     </Router>
