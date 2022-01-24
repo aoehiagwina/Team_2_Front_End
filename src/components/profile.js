@@ -23,17 +23,11 @@ export const Profile = ({user}) => {
     };
 
     const deleteHandler = async (tournamentName) => {
-        // let storedList = [...created];
-        // storedList.splice(index, 1);
-        // setCreated(storedList);
         await deleteTournamentFetch(tournamentName, user._id);
         createdHandler();
     };
 
     const leaveHandler = async (tournamentName) => {
-        // let storedList = [...created];
-        // storedList.splice(index, 1);
-        // setJoined(storedList);
         await removePlayerFetch(tournamentName, user._id);
         joinedHandler();
     };
