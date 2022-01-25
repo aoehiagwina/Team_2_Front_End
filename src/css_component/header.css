@@ -24,3 +24,21 @@
 	justify-content: space-between;
 	font-size: calc(10px + 2vmin);
 }
+
+.major{
+    font-size: 2em;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-top: 10pc; */
+    text-align: center;
+  }
+.minor{
+    font-size: 0.6em;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-top: 10pc; */
+    text-align: center;
+}
+
+
+/* Set the background colours on a dynmic part */

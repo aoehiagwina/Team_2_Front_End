@@ -8,7 +8,6 @@ import { Home } from './components/home';
 // import { About } from './components/about';
 import { Logout } from './components/logout';
 import { Profile } from './components/profile';
-import { Search } from './components/search';
 import { CreateTournament } from './components/createTournament';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -18,6 +17,7 @@ import { updateUserFetch } from './utils/index';
 import { tokenCheck } from './utils';
 
 const App = () => {
+
 	const [user, setUser] = useState();
 
 	useEffect(() => {
