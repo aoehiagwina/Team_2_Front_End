@@ -1,6 +1,13 @@
+.Login {
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(240, 75, 108);
+}
 
-.Reg_Form{
-    border-radius: 38px;
-    background: linear-gradient(315deg, #dfdede, #ffffff);
-    box-shadow:  -26px -26px 52px #cbcbcb, 26px 26px 52px #ffffff;
+.Reg_Form {
+	border-radius: 38px;
+	background: linear-gradient(315deg, #dfdede, #ffffff);
+	box-shadow: -26px -26px 52px #cbcbcb, 26px 26px 52px #ffffff;
 }
