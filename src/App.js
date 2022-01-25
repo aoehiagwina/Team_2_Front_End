@@ -7,7 +7,6 @@ import { Home } from './components/home';
 // import { About } from './components/about';
 import { Logout} from './components/logout';
 import { Profile } from './components/profile';
-import { Search } from './components/search';
 import { CreateTournament } from './components/createTournament';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -55,29 +54,27 @@ const App = () => {
     <Router className="App">
       <div className='title'>
       <Header />
-        <main>
+      {/* <Login />  */}
+        <main> 
           <Routes>
             <Route exact path='/sign_up' element= {<SignUp user={user} setUser={setUser}/>}></Route>
             <Route  exact path="/"  element={<Home/>} />
             <Route path="/login"  element={<Login user={user} setUser={setUser}/>} />
-            {/* <Route path="/about" element={<About/>} /> */}
+
             <Route path="/logout" element={<Logout user={user} setUser={setUser}/>} />
             <Route path="/profile" element={<Profile user={user}/>} />
             <Route path="/createTournament" element={<CreateTournament user={user}/>} />
-            <Route path="/search" element={<Search user={user}/>} />
-          </Routes>
-
+          </Routes> 
+          {/* <div className='login'>
+            <Login /> 
+          </div> */}
         </main>
-        
-        
-      {/* <div className='login'>
-        <SignUp /> 
-      </div> */}
+
 
       </div>
-
-      {/* <div className='login'>
-        <SignUp /> 
+{/* 
+      <div className='login'>
+        <Login /> 
 
       </div> */}
 

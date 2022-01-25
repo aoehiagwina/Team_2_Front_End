@@ -31,10 +31,11 @@ body{
 .title{
   display: block;
   margin-top: 10pc;
-  width: 45%;
+  margin-bottom: 5pc;
+  width: 60%;
   height: 50pc;
   background: rgb(240, 75, 108);
-  margin-left: 2pc;
+  margin-left: 10pc;
   /* position: relative; */
   color: rgb(0, 0, 0);
   font-size: 1em;
@@ -42,13 +43,13 @@ body{
 
 }
 
-.major{
+/* .major{
   font-size: 3em;
   font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10pc;
   text-align: center;
-}
+} */
 
 .login{
   display: block;
