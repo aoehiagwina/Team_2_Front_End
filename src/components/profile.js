@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect, useCallback} from 'react';
+import React, { useState, useEffect, useCallback} from 'react';
 import { deleteTournamentFetch, removePlayerFetch, searchTournamentFetch} from "../utils/tournament";
 import { List } from './list';
 
@@ -24,19 +24,19 @@ export const Profile = ({user}) => {
     useEffect( () => {
         const fetchHandler = async () => {
             await createdHandler();
-        await joinedHandler();
+            await joinedHandler();
         };
         fetchHandler();
     },[createdHandler, joinedHandler]);
 
     const deleteHandler = async (tournamentName) => {
         await deleteTournamentFetch(tournamentName, user._id);
-        createdHandler();
+        await createdHandler();
     };
 
     const leaveHandler = async (tournamentName) => {
         await removePlayerFetch(tournamentName, user._id);
-        joinedHandler();
+        await joinedHandler();
     };
 
     return (
@@ -57,7 +57,6 @@ export const Profile = ({user}) => {
                         {joined && joined.length > 0 && <List items={joined} buttonName={"Leave"} handler={leaveHandler}/>}
                     </div>
                     <p>{<Link to="/createTournament">Create a new tournament</Link>}</p>
-                    <p>{<Link to="/search">Search for a tournament</Link>}</p>
                 </div>
             )}
         </div>
