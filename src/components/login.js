@@ -1,6 +1,6 @@
 import "../App.css";
-import React, { useState, useEffect } from "react";
-import { signUpFetch, tokenCheck , logInFetch} from "../utils";
+import React, { useState } from "react";
+import { signUpFetch, logInFetch} from "../utils";
 import '../css_component/login.css';
 
 import '../css_component/sign_up.css';
@@ -19,7 +19,7 @@ export const Login =({user, setUser}) =>{
     
     const submitHandler = (e) => {
         e.preventDefault();
-        if (email) {
+        if (logBool) {
           signUpFetch(username, email, password, setUser);
         } else {
           logInFetch(username, password, setUser);
