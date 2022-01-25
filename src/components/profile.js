@@ -22,8 +22,11 @@ export const Profile = ({user}) => {
     },[user]);
 
     useEffect( () => {
-        createdHandler();
-        joinedHandler();
+        const fetchHandler = async () => {
+            await createdHandler();
+        await joinedHandler();
+        };
+        fetchHandler();
     },[createdHandler, joinedHandler]);
 
     const deleteHandler = async (tournamentName) => {

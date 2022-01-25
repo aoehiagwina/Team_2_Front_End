@@ -54,7 +54,10 @@ const App = () => {
     <Router className="App">
       <div className='title'>
       <Header />
-        <main>
+
+      {/* <Login />  */}
+      <SignUp />
+        {/* <main> */}
           {/* <Routes>
             <Route exact path='/sign_up' element= {<SignUp user={user} setUser={setUser}/>}></Route>
             <Route  exact path="/"  element={<Home/>} />
@@ -64,21 +67,21 @@ const App = () => {
             <Route path="/profile" element={<Profile user={user}/>} />
             <Route path="/createTournament" element={<CreateTournament user={user}/>} />
           </Routes> */}
-          <div className='login'>
+          {/* <div className='login'>
             <Login /> 
-          </div>
-        </main>
+          </div> */}
+        {/* </main> */}
         
         {/* <div className='login'>
           <SignUp /> 
         </div> */}
 
       </div>
-
+{/* 
       <div className='login'>
         <Login /> 
 
-      </div>
+      </div> */}
 
 
     </Router>

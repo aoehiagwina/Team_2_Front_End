@@ -1,8 +1,10 @@
+import '../css_component/home.css'
 export const Home = () => {
     return (
-        <div>
-            
-          Just about
+        <div className="background">
+         
+        
+         
         </div>
     )
 };
