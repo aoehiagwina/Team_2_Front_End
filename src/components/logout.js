@@ -1,5 +1,6 @@
 import "../App.css";
 import {Link} from 'react-router-dom'
+import '../css_component/logout.css';
 
 export const Logout = ({ user, setUser }) => {
 
@@ -10,17 +11,19 @@ export const Logout = ({ user, setUser }) => {
         setUser();
       };
       return (
-        <div>
+        <div className="around">
+        <div className="notLogged">
         {!user ? (
-          <p>Please log in</p>
+          <p className="please">Please log in</p>
         ) : (
-          <div >
-          <span >{user.username}Do you want to logout?</span>
+          <div className="logged">
+          <span className="byeUser">{user.username} see you again ! </span>
           <div >
     
-          <button  onClick={logOut}><Link to="/" className="link">Log out</Link></button></div>
+          <button onClick={logOut} className="btnLogout"><Link to="/" className="link">Log out</Link></button></div>
         </div>
         )}
+        </div>
         </div>
       );
     };
