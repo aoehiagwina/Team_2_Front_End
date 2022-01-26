@@ -1,12 +1,6 @@
-/* 
-
-body {
-	background: #eee !important;	
-} */
-
 .wrapper {
-	margin-top: 60px;
-	margin-bottom: 80px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 .form-signin {
@@ -24,7 +18,7 @@ body {
 	text-align: center;
 	font-weight: bolder;
 	font-size: 30px;
-	color: #fff;
+	color: #ee0c6b;
 }
 
 .checkbox {
