@@ -10,6 +10,7 @@ export const Header = () => {
 				<h1>The Ultimate Challenge</h1>
 			</div>
 
+
 			<div className='Header_Navs'>
 				<NavLink to='/'>Home</NavLink>
 				<NavLink to='/login'>Login</NavLink>
