@@ -4,7 +4,7 @@
 	width: 100vw;
 	min-height: 20vh;
 	justify-content: center;
-	background-color: #f42462;
+	background-color: #ee0c6b;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -17,6 +17,7 @@
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .Header_Navs {
