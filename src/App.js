@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/header';
-import { HeroBanner } from './components/hero_banner';
 import { SignUp } from './components/sign_up';
 // import {SignIn} from './components/signin';
 import { Login } from './components/login';
