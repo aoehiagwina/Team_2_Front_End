@@ -1,4 +1,5 @@
 import { Item } from './item';
+import '../css_component/list.css';
 
 export const List = ( {user, items, buttonName, handler} ) => {
     return (

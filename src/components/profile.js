@@ -6,7 +6,6 @@ import { List } from './list';
 export const Profile = ({user}) => {
     const [created, setCreated] = useState();
     const [joined, setJoined] = useState();
-
     
 
     const createdHandler = useCallback(() => {
