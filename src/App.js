@@ -28,7 +28,6 @@ const App = () => {
 			<div className='site-wrapper'>
 				<Header className='heading' />
 				<main className='main-wrapper'>
-					{/* <HeroBanner /> */}
 					<Routes>
 						<Route
 							exact

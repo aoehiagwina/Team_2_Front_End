@@ -11,11 +11,21 @@ export const Header = () => {
 			</div>
 
 			<div className='Header_Navs'>
-				<NavLink to='/'>Home</NavLink>
-				<NavLink to='/login'>Login</NavLink>
-				<NavLink to='/logout'>Logout</NavLink>
-				<NavLink to='/profile'>Profile</NavLink>
-				<NavLink to='/search'>Search</NavLink>
+				<NavLink className={'navLink'} to='/'>
+					Home
+				</NavLink>
+				<NavLink className={'navLink'} to='/login'>
+					Login
+				</NavLink>
+				<NavLink className={'navLink'} to='/logout'>
+					Logout
+				</NavLink>
+				<NavLink className={'navLink'} to='/profile'>
+					Profile
+				</NavLink>
+				<NavLink className={'navLink'} to='/search'>
+					Search
+				</NavLink>
 			</div>
 		</div>
 	);

@@ -1,11 +1,10 @@
 import React from 'react';
+import '../css_component/home.css';
 
 export const Home = () => {
 	return (
 		<div className='hero-banner'>
-			<div className='hero-content'>
-				<h1>EXAMPLE TEST TEXT</h1>
-			</div>
+			<div className='hero-content'></div>
 		</div>
 	);
 };
