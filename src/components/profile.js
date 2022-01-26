@@ -6,7 +6,6 @@ import {
 	searchTournamentFetch,
 } from '../utils/tournament';
 import { List } from './list';
-import '../css_component/profile.css';
 
 export const Profile = ({ user }) => {
 	const [created, setCreated] = useState();
