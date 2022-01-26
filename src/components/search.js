@@ -21,7 +21,6 @@ export const Search = ({user}) => {
 
     return (
         <div>
-            {user && <h2>{user.username}</h2>}
             <form id="searchForm" onSubmit={searchHandler}>
                 <h2>Search</h2>
                 <div className="radioContainer">
