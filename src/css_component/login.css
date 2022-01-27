@@ -7,25 +7,32 @@ body {
 
 .wrapper {	
 	margin-top: 60px;
-    margin-bottom: 80px;
+    margin-bottom: -72px;  /* here I changed to get full header  */
+   
 }
 
 .form-signin {
+  width: 350px;
   max-width: 380px;
   padding: 15px 35px 45px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0,0,0,0.1);  
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form-signin-heading {
+    background:rgb(228, 52, 87);
+    border-radius: 20px;
+    /* margin-bottom: -125px; something wrong i did */
     margin-bottom: 30px;
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
     color: #fff;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .checkbox {
@@ -46,6 +53,7 @@ body {
 }
 
 input[type="text"] {
+   
     margin-bottom: -1px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -56,19 +64,65 @@ input[type="password"] {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+.pass{
+    color: rgb(150, 145, 145);
+    cursor: pointer;
+}
 
 .main_button{
+    transition: all .5s ease;
+    outline: none;
+    /* transition:  0.5s; */
     background-color: rgb(228, 52, 87);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.main_button:hover{
+    background-color: rgb(253, 249, 250);
+    border:1px solid rgb(228, 52, 87);
+    color: rgb(228, 52, 87);
+    /* border-radius: 20px; */
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+button{
+    cursor: pointer;
+}
 
 .reg_btn{
-    margin-left: 12.5pc;
-    margin-top: 0.5pc;
+    transition: all .5s ease;
+    border: 3px solid rgb(228, 52, 87);
+    outline: none;
+    transition:  1s;
+    border-radius: 50px;
+    color: rgb(228, 52, 87);
+    
+
+    margin-left: 2.5pc;
+    margin-top: 2pc;
     background-color: rgb(253, 249, 250);
-    color: rgb(218, 50, 84);
     font-weight: bolder;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.reg_btn:hover{
+    background-color: rgb(228, 52, 87);
+    border:3px solid rgb(228, 52, 87);
+    color: rgb(253, 249, 250);
+    border-radius: 20px;
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-icon{
+    /* margin-top: 15%; */
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/* 
+.social{
+    /* margin-right: 100px; */
+    /* justify-content:flex-end; */
+    /* flex-direction: row;
+    justify-content: space-between; */
+/* } */ 
 
 
