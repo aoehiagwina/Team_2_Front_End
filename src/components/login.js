@@ -74,6 +74,8 @@ export const Login = ({ user, setUser }) => {
 			) : (
 				<div>
 					<h2>Welcome {user.username}</h2>
+					<h2>Go to your profile and start the game!</h2>
+					<div className='arrow'></div>
 				</div>
 			)}
 		</div>

@@ -7,7 +7,7 @@ export const Header = () => {
 	return (
 		<div className='header-wrapper'>
 			<div className='Header_Title'>
-				<h1>The Ultimate Challenge</h1>
+				<h1 className='head'>The Ultimate Challenge</h1>
 			</div>
 
 			<div className='Header_Navs'>

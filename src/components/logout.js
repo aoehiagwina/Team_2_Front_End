@@ -17,7 +17,7 @@ export const Logout = ({ user, setUser }) => {
           <p className="please">Please log in</p>
         ) : (
           <div className="logged">
-          <span className="byeUser">{user.username} see you again ! </span>
+          <div className="byeUser">{user.username} see you again ! </div>
           <div >
           <div className="right">
           <button onClick={logOut} className="btnLogout" ><Link to="/" className="link"><span class="mas">Log out</span></Link></button></div></div>

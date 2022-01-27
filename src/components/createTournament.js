@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { addTournamentFetch} from "../utils/tournament";
+import '../css_component/profile.css';
 
 export const CreateTournament = ({user}) => {
     const [tournamentName, setTournamentName] = useState();
