@@ -4,7 +4,7 @@
 	width: 100vw;
 	min-height: 20vh;
 	justify-content: center;
-	background-color: rgb(228, 52, 87);
+	background-color: white;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -16,20 +16,22 @@
 	font-style: italic;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
+	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
+	color: rgb(228, 52, 87);
 }
 
 .Header_Navs {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	font-size: calc(10px + 2vmin);
+	/* font-size: calc(10px + 2vmin); */
 	font-weight: 600;
+	background-color: white;
 }
 
 .navLink {
-	color: white;
+	color: rgb(228, 52, 87);
 	text-decoration: none;
 	margin: 15px 0;
 }
@@ -39,7 +41,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		font-size: calc(20px + 4vmin);
 	}
 }
 
