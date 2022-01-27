@@ -8,7 +8,7 @@ export const Footer = () => {
 				<div className='footer-content'>
 					<img
 						className='footer-img'
-						src='../images/logo_white.png'
+						src={require('./images/logo_white.png')}
 						alt='ultimate challenge small logo'></img>
 				</div>
 
