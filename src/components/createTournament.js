@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { addTournamentFetch} from "../utils/tournament";
 import '../css_component/profile.css';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 export const CreateTournament = ({user}) => {
     const [tournamentName, setTournamentName] = useState();
@@ -9,10 +9,13 @@ export const CreateTournament = ({user}) => {
     const [date, setDate] = useState();
     const [description, setDescription] = useState();
     const [tags, setTags] = useState();
+    const navigate = useNavigate();
+    //const handleOnClick = useCallback(() => navigate('/sample', {replace: true}), [navigate]);
 
-    const createTournamentHandler = (e) => {
+    const createTournamentHandler = async (e) => {
         e.preventDefault();
-        addTournamentFetch(tournamentName, game, date, user._id, description, tags);
+        await addTournamentFetch(tournamentName, game, date, user._id, description, tags);
+        navigate('/profile', {replace: true}, [navigate]);
     };
     
     return (
