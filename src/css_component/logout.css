@@ -1,71 +1,57 @@
-
-
-
-.notLogged{
-    
-    font-weight: bold
+.notLogged {
+	font-weight: bold;
 }
-.logged{
-    font-weight: bold
-    
-
+.logged {
+	font-weight: bold;
 }
 
+.byeUser {
+	font-size: large;
 
-
-.byeUser{
-    font-size: large;
-
-    margin-left: 10%;
+	margin-left: 10%;
 }
-.link{
-    color: rgb(255, 255, 255);
+.link {
+	color: rgb(255, 255, 255);
 }
-.link:hover{
-    color: rgb(228, 52, 87);
+.link:hover {
+	color: rgb(228, 52, 87);
 }
 .around {
-    max-width: 380px;
-    width: 300px;
-    height: 300px;
-    padding: 15px 35px 45px;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,0.1);  
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+	max-width: 380px;
+	width: 300px;
+	height: 300px;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-  .please{
-    font-weight: bold;
-    font-size: x-large;
-    margin-left: 12%;
-  }
-  .btnLogout {
-   
-    transition: all .5s ease;
-    border: 3px solid rgb(228, 52, 87);
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    font-size: 17px;
-    outline: none;
-    border-radius: 20px;
-    margin-top: 50%;
-    margin-left: 15%;
-    background-color: rgb(228, 52, 87);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition:  1s;
-    /* transition-duration: 1s; */
-  
-    
+.please {
+	font-weight: bold;
+	font-size: x-large;
+	margin-left: 12%;
+}
+.btnLogout {
+	transition: all 0.5s ease;
+	border: 3px solid rgb(228, 52, 87);
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+	font-size: 17px;
+	outline: none;
+	border-radius: 20px;
+	margin-top: 50%;
+	margin-left: 15%;
+	background-color: rgb(228, 52, 87);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 1s;
+	/* transition-duration: 1s; */
 }
 .btnLogout:hover {
-    
-    background-color: rgb(245, 240, 240);
-    border:3px solid rgb(228, 52, 87);
-    border-radius: 20px;
-    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+	background-color: rgb(245, 240, 240);
+	border: 3px solid rgb(228, 52, 87);
+	border-radius: 20px;
+	box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-

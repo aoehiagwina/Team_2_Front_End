@@ -1,28 +1,46 @@
 .header-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 100vw;
 	min-height: 20vh;
 	justify-content: center;
-	background-color: rgb(240, 75, 108);
-	padding: 5px;
+	background-color: rgb(228, 52, 87);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .Header_Title {
+	padding: 10px;
 	display: flex;
 	font-style: italic;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .Header_Navs {
-	/* margin-left: 50pc;
-	margin-right: 5pc; */
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-size: calc(10px + 2vmin);
+	font-weight: 600;
+}
+
+.navLink {
+	color: white;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.Header_Navs {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: calc(20px + 4vmin);
+	}
 }
 
 .major {
