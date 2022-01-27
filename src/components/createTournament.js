@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { addTournamentFetch} from "../utils/tournament";
 import '../css_component/profile.css';
+import {Link} from 'react-router-dom'
 
 export const CreateTournament = ({user}) => {
     const [tournamentName, setTournamentName] = useState();
@@ -23,7 +24,7 @@ export const CreateTournament = ({user}) => {
                 <input type="datetime-local" onChange={(e) => setDate(e.target.value)}/><br/>
                 <input onChange={(e) => setDescription(e.target.value)} placeholder="Add a description of your tournament"/><br/>
                 <input onChange={(e) => setTags(e.target.value.split(","))} placeholder="Separate your tags with a ,"/><br/>
-                <button type="submit">Submit</button>
+                <button type="submit"><Link className='link' to="/profile">Submit</Link></button>
             </form>
         </div>
     )
