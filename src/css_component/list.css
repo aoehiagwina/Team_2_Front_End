@@ -1,12 +1,13 @@
 #tournamentList {
 	margin-bottom: 5vh;
-	background-color: #e84068;
+	background-color: #ffffff;
 	border-radius: 10px;
 	text-align: center;
 	font-size: 30px;
-	color: white;
-	box-shadow: 5px 5px 15px 5px #555253;
-    width: 40vw;
+	color: rgb(228, 52, 87);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 15vw;
+	margin-left: -3vw;;
 }
 
 @media only screen and (max-width: 600px) {

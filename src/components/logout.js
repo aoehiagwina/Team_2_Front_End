@@ -14,7 +14,10 @@ export const Logout = ({ user, setUser }) => {
         <div className="around">
         <div className="notLogged">
         {!user ? (
+          <div>
           <p className="please">Please log in</p>
+          <button className='btnLogout'><Link className='link' to="/login">Login</Link></button>
+          </div>
         ) : (
           <div className="logged">
           <div className="byeUser">{user.username} see you again ! </div>
