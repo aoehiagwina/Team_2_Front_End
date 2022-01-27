@@ -45,13 +45,14 @@ export const Profile = ({ user }) => {
 	return (
 		<div>
 			{!user ? (
-				<div className='profile-page'>
-					<h2>Please log in</h2>
+				<div className='around'>
+					<h2 className='please2'>Please log in</h2>
+					<button className='btnLogout'><Link className='link' to="/login">Login</Link></button>
 				</div>
 			) : (
-				<div>
+				<div className='form-signin'>
 					<h2>{user.username}'s Profile</h2>
-					<div>
+					<div >
 						<h2>Your tournaments</h2>
 						{created && created.length > 0 && (
 							<List

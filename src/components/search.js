@@ -25,7 +25,7 @@ export const Search = ({ user }) => {
 	};
 
 	return (
-		<div className='search-page'>
+		<div className='form-signin'>
 			<form id='searchForm' onSubmit={searchHandler}>
 				<h2>Search</h2>
 				<div className='radioContainer'>
