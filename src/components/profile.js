@@ -6,6 +6,7 @@ import {
 	searchTournamentFetch,
 } from '../utils/tournament';
 import { List } from './list';
+import '../css_component/profile.css';
 
 export const Profile = ({ user }) => {
 	const [created, setCreated] = useState();
@@ -70,7 +71,7 @@ export const Profile = ({ user }) => {
 							/>
 						)}
 					</div>
-					<p>{<Link to='/createTournament'>Create a new tournament</Link>}</p>
+					<p>{<button><Link to='/createTournament' className='link'>Create a new tournament</Link></button>}</p>
 				</div>
 			)}
 		</div>

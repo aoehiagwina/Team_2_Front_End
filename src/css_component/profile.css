@@ -1,0 +1,22 @@
+button{
+        transition: all 0.5s ease;
+	border: 3px solid rgb(228, 52, 87);
+	text-transform: uppercase;
+        border-radius: 20px;
+        background-color: rgb(228, 52, 87);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 1s;
+}
+button:hover {
+	background-color: rgb(245, 240, 240);
+	border: 3px solid rgb(228, 52, 87);
+	border-radius: 20px;
+	box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.link{
+   
+color: rgb(255, 255, 255);
+    }
+.link:hover {
+        color: rgb(228, 52, 87);
+}

@@ -69,7 +69,7 @@
 
 .reg_btn {
 	transition: all 0.5s ease;
-	border: 3px solid rgb(228, 52, 87);
+	border: 1px solid rgb(228, 52, 87);
 	outline: none;
 	transition: 1s;
 	border-radius: 50px;
@@ -83,7 +83,7 @@
 }
 .reg_btn:hover {
 	background-color: rgb(228, 52, 87);
-	border: 3px solid rgb(228, 52, 87);
+	border: 1px solid rgb(228, 52, 87);
 	color: rgb(253, 249, 250);
 	border-radius: 20px;
 	box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -94,3 +94,12 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+/* .arrow{
+	background-image: url(../components/images/pngegg.png);
+	height: 100px;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	background-repeat:no-repeat;
+	
+} */

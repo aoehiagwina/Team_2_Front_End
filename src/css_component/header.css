@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 .header-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -35,6 +36,9 @@
 	text-decoration: none;
 	margin: 15px 0;
 }
+.navLink:hover{
+	color: rgb(182, 7, 65);
+}
 
 @media only screen and (max-width: 600px) {
 	.Header_Navs {
@@ -59,4 +63,7 @@
 	text-align: center;
 }
 
+.head{
+	font-family: 'Revalia', cursive;
+}
 /* Set the background colours on a dynmic part */
