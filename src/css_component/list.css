@@ -1,34 +1,26 @@
-ul {
-    font-size: 20px;
-    list-style-type: none;
-}
-
 #tournamentList {
-    margin-bottom: 5vh;
-    background-color: #E84068;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    box-shadow: 5px 5px 15px 5px #555253;
+	margin-bottom: 5vh;
+	background-color: #e84068;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	box-shadow: 5px 5px 15px 5px #555253;
 }
 
-button {
-    margin-bottom: 2vh;
-}
 .content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid #ccc;
-    background: #fff;
-    overflow: auto;
-    outline: none;
-    text-align: center;
-  }
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #ccc;
+	background: #fff;
+	overflow: auto;
+	outline: none;
+	text-align: center;
+}
 
 .descriptionItem {
-    margin: 10px;
+	margin: 10px;
 }

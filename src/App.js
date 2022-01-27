@@ -15,6 +15,7 @@ import { signUpFetch } from './utils/index';
 import { readUserFetch } from './utils/index';
 import { updateUserFetch } from './utils/index';
 import { tokenCheck } from './utils';
+import { Footer } from './components/footer';
 
 const App = () => {
 	const [user, setUser] = useState();
@@ -51,6 +52,7 @@ const App = () => {
 						<Route path='/search' element={<Search user={user} />} />
 					</Routes>
 				</main>
+				<Footer />
 			</div>
 		</Router>
 	);
