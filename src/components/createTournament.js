@@ -15,7 +15,7 @@ export const CreateTournament = ({user}) => {
     const createTournamentHandler = async (e) => {
         e.preventDefault();
         await addTournamentFetch(tournamentName, game, date, user._id, description, tags);
-        navigate('/profile', {replace: true}, [navigate]);
+        await navigate('/profile', {replace: true}, [navigate]);
     };
     
     return (
